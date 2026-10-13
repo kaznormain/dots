@@ -16,10 +16,10 @@
 
     # diff and log
     df = diff                           # show diff between working dir and staged
-    dfs = diff --staged                 # 比對暫存區與上次 Commit
-    lg = log --graph --oneline --decorate -n 15  # 漂亮的文字圖表顯示最新 15 筆 Commit
-    lga = log --graph --oneline --decorate --all # 顯示所有分支的完整分支樹
+    dfs = diff --staged                 # show diff between staged and cimmited
+    lg = log --graph --oneline --decorate -n 15  # list last 15 commit logs
+    lga = log --graph --oneline --decorate --all # list all commit logs
 
     # undo
-    unstage = restore --staged          # 取消暫存（Unstage）
-    undo = reset --soft HEAD~1          # 復原上次 Commit，但保留所有修改過的檔案
+    unstage = restore --staged          # unstage
+    undo = reset --soft HEAD~1          # cancel last commit but keep the modified files
