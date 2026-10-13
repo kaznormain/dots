@@ -1,0 +1,25 @@
+[init]
+    defaultBranch = main
+
+[alias]
+    # status and switching
+    st = status -s                      # simplify status
+    co = checkout                       # switch to another branch
+    cb = checkout -b                    # create a new branch and switch to it
+    br = branch                         # list all the branches
+
+    # staging and commit
+    aa = add -A                         # add all
+    cm = commit -m                      # commit with a message
+    ca = commit --amend                 # amend last commit
+    can = commit --amend --no-edit      # amend last commit without editing the message
+
+    # diff and log
+    df = diff                           # show diff between working dir and staged
+    dfs = diff --staged                 # 比對暫存區與上次 Commit
+    lg = log --graph --oneline --decorate -n 15  # 漂亮的文字圖表顯示最新 15 筆 Commit
+    lga = log --graph --oneline --decorate --all # 顯示所有分支的完整分支樹
+
+    # undo
+    unstage = restore --staged          # 取消暫存（Unstage）
+    undo = reset --soft HEAD~1          # 復原上次 Commit，但保留所有修改過的檔案

@@ -1,0 +1,7 @@
+.DS_Store
+.env
+.zsh_history
+.zsh-update
+.zcompdump*
+*local*
+*private*

@@ -1,0 +1,11 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+alias o="open"
+alias clip="pbcopy"
+alias up="brew update && brew upgrade && brew cleanup"
+alias inst="brew install"
+alias unin="brew uninstall --zap"
+alias clup="brew autoremove && brew cleanup -s"
+alias search="brew search"
+alias info="brew info"
+alias lcal="brew list"

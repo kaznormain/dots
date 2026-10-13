@@ -1,0 +1,224 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[╭──\\(](color_frame)\
+$sudo\
+$username\
+[@](color_frame)\
+$hostname\
+[\\)](color_frame)\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$c\
+$deno\
+$golang\
+$java\
+$lua\
+$nodejs\
+$python\
+$rust\
+$fill\
+$cmd_duration\
+$time\
+$line_break\
+[╰─](color_frame)\
+$character"""
+
+#palette = 'default_gb'
+#palette = 'pb'
+#palette = 'bp'
+#palette = 'ry'
+#palette = 'rw'
+#palette = 'wr'
+palette = 'gc'
+
+[sudo]
+disabled = false
+symbol = '󰕥 '
+format = '[$symbol](color_content)'
+
+[username]
+show_always = true
+style_root = 'red'
+format = '[$user](color_content)'
+
+[hostname]
+#ssh_symbol = ' 󰖟 '
+ssh_only = false
+format = '[$ssh_symbol$hostname](color_content)'
+
+[directory]
+format = '[─\[](color_frame)[$read_only](color_content)[$path](color_content)[\]](color_frame)'
+truncation_length = 3
+truncation_symbol = '.../'
+read_only = '󰌾'
+
+[os]
+disabled = false
+
+[os.symbols]
+AlmaLinux = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+Elementary = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = " "
+Gentoo = " "
+Ios = " "
+Kali = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mint = "󰣭 "
+NixOS = " "
+Nobara = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Solus = " "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = " "
+Zorin = " "
+
+[git_branch]
+symbol = ''
+
+
+format = '[─\[](color_frame)[$symbol$branch(:$remote_branch)](color_content)'
+
+[git_commit]
+format = '[\($hash$tag\)](color_content)'
+
+[git_state]
+format = '\([$state($progress_current/$progress_total)](color_content)\)'
+
+[git_metrics]
+disabled = false
+format = '([ +$added](color_frame))([ -$deleted](color_error))'
+
+[git_status]
+format = '([ \[$all_status$ahead_behind\]](color_content))[\]](color_frame)'
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
+
+[fill]
+symbol = ' '
+style = 'color_frame'
+
+[cmd_duration]
+format = '[\[](color_frame)[󰓅 $duration](color_content)[\]](color_frame)─'
+
+[memory_usage]
+disabled = false
+threshold = -1
+symbol = ' '
+style = 'dimmed white'
+format = '[\[](color_frame)$symbol[${ram_pct}(|${swap_pct})]($style)[\]─](color_frame)'
+
+[time]
+disabled = false
+style = 'dimmed white'
+time_format = '%a  %R'
+format = '[\[](color_frame)[$time]($style)[\]](color_frame)'
+
+[character]
+disabled = false
+success_symbol = '[\$](color_content)'
+error_symbol = '[\$](color_error)'
+#vimcmd_symbol = '[>](color_frame)'
+#vimcmd_replace_symbol = '[>](color_content)'
+#vimcmd_replace_one_symbol = '[>](color_content)'
+#vimcmd_visual_symbol = '[>](color_content)'
+
+[c]
+symbol = ' '
+format = '[─\[](color_frame)[$symbol($version( $name))](color_content)[\]](color_frame)'
+
+#[cpp]
+#disabled = false
+#symbol = ' '
+#format = '[─\[](color_frame)[$symbol($version( $name))](color_content)[\]](color_frame)'
+
+[deno]
+symbol = ' '
+format = '[─\[](color_frame)[$symbol($version)](color_content)[\]](color_frame)'
+
+[golang]
+symbol = ' '
+format = '[─\[](color_frame)[$symbol($version)](color_content)[\]](color_frame)'
+
+[java]
+symbol = ' '
+format = '[─\[](color_frame)[$symbol($version)](color_content)[\]](color_frame)'
+
+[lua]
+symbol = '󰢱 '
+format = '[─\[](color_frame)[$symbol($version)](color_content)[\]](color_frame)'
+
+[nodejs]
+symbol = ' '
+format = '[─\[](color_frame)[$symbol($version)](color_content)[\]](color_frame)'
+
+[python]
+symbol = '󰌠 '
+format = '[─\[](color_frame)[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))](color_content)[\]](color_frame)'
+
+[rust]
+symbol = ' '
+format = '[─\[](color_frame)[$symbol($version)](color_content)[\]](color_frame)'
+
+[palettes.default_gb]
+color_frame = 'green'
+color_content = 'blue'
+color_error = 'red'
+
+[palettes.bp]
+color_frame = 'blue'
+color_content = 'purple'
+color_error = 'red'
+
+[palettes.pb]
+color_frame = 'purple'
+color_content = 'blue'
+color_error = 'red'
+
+[palettes.ry]
+color_frame = 'red'
+color_content = 'yellow'
+color_error = 'red'
+
+[palettes.rw]
+color_frame = 'red'
+color_content = 'dimmed white'
+color_error = 'red'
+
+[palettes.wr]
+color_frame = 'dimmed white'
+color_content = 'red'
+color_error = 'white'
+
+[palettes.gc]
+color_frame = 'green'
+color_content = 'cyan'
+color_error = 'red'
