@@ -35,6 +35,8 @@ $character"""
 #palette = 'rw'
 #palette = 'wr'
 palette = 'gc'
+#palette = 'yc'
+#palette = 'yw'
 
 [sudo]
 disabled = false
@@ -146,10 +148,10 @@ format = '[\[](color_frame)[$time]($style)[\]](color_frame)'
 disabled = false
 success_symbol = '[\$](color_content)'
 error_symbol = '[\$](color_error)'
-#vimcmd_symbol = '[>](color_frame)'
-#vimcmd_replace_symbol = '[>](color_content)'
-#vimcmd_replace_one_symbol = '[>](color_content)'
-#vimcmd_visual_symbol = '[>](color_content)'
+vimcmd_symbol = '[\$](color_frame)'
+vimcmd_replace_symbol = '[\$](color_frame)'
+vimcmd_replace_one_symbol = '[\$](color_frame)'
+vimcmd_visual_symbol = '[\$](color_frame)'
 
 [c]
 symbol = ' '
@@ -221,4 +223,14 @@ color_error = 'white'
 [palettes.gc]
 color_frame = 'green'
 color_content = 'cyan'
+color_error = 'red'
+
+[palettes.yc]
+color_frame = 'yellow'
+color_content = 'cyan'
+color_error = 'red'
+
+[palettes.yw]
+color_frame = 'white'
+color_content = 'yellow'
 color_error = 'red'

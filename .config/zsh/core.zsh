@@ -12,10 +12,7 @@ mkdir -p "${HISTFILE:h}"
 HISTSIZE=50000 SAVEHIST=50000
 setopt HIST_IGNORE_ALL_DUPS HIST_IGNORE_SPACE SHARE_HISTORY
 setopt AUTO_CD INTERACTIVE_COMMENTS
-
-#setopt APPEND_HISTORY
-#setopt INC_APPEND_HISTORY
-#setopt HIST_REDUCE_BLANKS
+setopt APPEND_HISTORY INC_APPEND_HISTORY HIST_REDUCE_BLANKS
 
 # auto-complete
 autoload -Uz compinit
@@ -24,7 +21,8 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # key binding
-bindkey -e
+#bindkey -e
+bindkey -v
 
 # tmux auto-launch
 if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ -n "$PS1" ] && [ -z "$VSCODE_INJECTION" ]; then
