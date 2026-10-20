@@ -40,10 +40,3 @@ magenta = "#c099ff"
 cyan = "#86e1fc"
 white = "#828bb8"
 
-[[colors.indexed_colors]]
-index = 16
-color = "#ff966c"
-
-[[colors.indexed_colors]]
-index = 17
-color = "#c53b53"
