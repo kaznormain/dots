@@ -28,15 +28,19 @@ $line_break\
 [╰─](color_frame)\
 $character"""
 
-#palette = 'default_gb'
-#palette = 'pb'
-#palette = 'bp'
 #palette = 'ry'
 #palette = 'rw'
-#palette = 'wr'
-palette = 'gc'
+#palette = 'gb'
+#palette = 'gc'
 #palette = 'yc'
 #palette = 'yw'
+#palette = 'bp'
+#palette = 'pb'
+#palette = 'wr'
+#palette = 'wg'
+#palette = 'wy'
+#palette = 'wb'
+palette = 'wc'
 
 [sudo]
 disabled = false
@@ -190,7 +194,7 @@ format = '[─\[](color_frame)[${symbol}${pyenv_prefix}(${version})(\($virtualen
 symbol = ' '
 format = '[─\[](color_frame)[$symbol($version)](color_content)[\]](color_frame)'
 
-[palettes.default_gb]
+[palettes.gb]
 color_frame = 'green'
 color_content = 'blue'
 color_error = 'red'
@@ -230,7 +234,27 @@ color_frame = 'yellow'
 color_content = 'cyan'
 color_error = 'red'
 
-[palettes.yw]
+[palettes.wy]
 color_frame = 'white'
 color_content = 'yellow'
+color_error = 'red'
+
+[palettes.yw]
+color_frame = 'yellow'
+color_content = 'white'
+color_error = 'red'
+
+[palettes.wg]
+color_frame = 'white'
+color_content = 'green'
+color_error = 'red'
+
+[palettes.wb]
+color_frame = 'white'
+color_content = 'blue'
+color_error = 'red'
+
+[palettes.wc]
+color_frame = 'white'
+color_content = 'cyan'
 color_error = 'red'
