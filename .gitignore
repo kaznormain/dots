@@ -6,7 +6,6 @@
 
 !/.config/
 /.config/*
-!/.config/1.txt
 !/.config/starship.toml
 
 !/.config/alacritty/
