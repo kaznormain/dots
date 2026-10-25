@@ -1,7 +1,29 @@
-.DS_Store
-.env
-.zsh_history
-.zsh-update
-.zcompdump*
-*local*
-*private*
+ *
+ !/.gitignore
+ !/.pub.gitconfig
+ !/.tmux.conf
+ !/.zshenv
+ !/.config/
+ !/.config/alacritty/
+ !/.config/alacritty/alacritty.toml
+ !/.config/alacritty/icons/
+ !/.config/alacritty/icons/alacritty.ico
+ !/.config/alacritty/icons/alacritty.png
+ !/.config/alacritty/icons/alacritty.svg
+ !/.config/alacritty/themes/
+ !/.config/alacritty/themes/gruvbox_dark.toml
+ !/.config/alacritty/themes/tokyo_night_moon.toml
+ !/.config/environment.d/
+ !/.config/environment.d/fcitx5.conf
+ !/.config/ghostty/
+ !/.config/ghostty/config.ghostty
+ !/.config/starship.toml
+ !/.config/zsh/
+ !/.config/zsh/.zshrc
+ !/.config/zsh/aliases.zsh
+ !/.config/zsh/core.zsh
+ !/.config/zsh/os/
+ !/.config/zsh/os/darwin.zsh
+ !/.config/zsh/os/linux.zsh
+ !/.config/zsh/plugins.zsh
+ !/.config/zsh/tools.zsh
