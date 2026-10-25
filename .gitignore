@@ -23,6 +23,10 @@
 !/.config/alacritty/themes/gruvbox_dark.toml
 !/.config/alacritty/themes/tokyo_night_moon.toml
 
+!/.config/bat/
+/.config/bat/*
+!/.config/bat/config
+
 !/.config/environment.d/
 /.config/environment.d/*
 !/.config/environment.d/fcitx5.conf
