@@ -4,6 +4,7 @@
  !/.tmux.conf
  !/.zshenv
  !/.config/
+ !/.config/1.txt
  !/.config/alacritty/
  !/.config/alacritty/alacritty.toml
  !/.config/alacritty/icons/
