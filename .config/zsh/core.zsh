@@ -25,3 +25,4 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ -n "$PS1" ] && [ -z "$VSC
     tmux new-session -A -s main
 fi
 fastfetch
+bindkey -e
