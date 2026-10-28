@@ -1,6 +1,6 @@
 alias reload="exec zsh"
 alias mkdir="mkdir --verbose"
-alias e="exit"
+alias q="exit"
 alias c="clear"
 alias ..="z .."
 alias ...="z ../.."
