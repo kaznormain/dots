@@ -25,7 +25,7 @@
 
 !/.config/bat/
 /.config/bat/*
-!/.config/bat/config
+!/.config/bat/bat.conf
 
 !/.config/btop/
 /.config/btop/*
